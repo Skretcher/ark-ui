@@ -1,0 +1,38 @@
+module.exports = {
+  root: true,
+  env: {
+    node: true,
+    es2020: true,
+  },
+  extends: [
+    'eslint:recommended',
+    '@typescript-eslint/recommended',
+    'prettier',
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module',
+  },
+  plugins: ['@typescript-eslint', 'prettier'],
+  rules: {
+    'prettier/prettier': 'error',
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+  },
+  overrides: [
+    {
+      files: ['*.vue'],
+      extends: ['plugin:vue/vue3-essential', '@vue/eslint-config-typescript'],
+    },
+    {
+      files: ['*.svelte'],
+      extends: ['plugin:svelte/recommended'],
+      parser: 'svelte-eslint-parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+      },
+    },
+  ],
+};

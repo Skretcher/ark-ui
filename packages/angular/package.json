@@ -1,0 +1,41 @@
+{
+  "name": "@ark-ui/angular",
+  "version": "0.0.0",
+  "description": "Angular components for Ark-UI",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "ng build",
+    "dev": "ng build --watch",
+    "lint": "ng lint",
+    "lint:fix": "ng lint --fix",
+    "test": "ng test",
+    "test:watch": "ng test --watch"
+  },
+  "dependencies": {
+    "@ark-ui/core": "workspace:*",
+    "@ark-ui/css": "workspace:*",
+    "@angular/core": "^17.0.0",
+    "@angular/common": "^17.0.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "^17.0.0",
+    "@angular/compiler": "^17.0.0",
+    "@angular/compiler-cli": "^17.0.0",
+    "@angular/platform-browser": "^17.0.0",
+    "@angular/platform-browser-dynamic": "^17.0.0",
+    "@types/jasmine": "^5.0.0",
+    "jasmine-core": "^5.0.0",
+    "karma": "^6.0.0",
+    "karma-chrome-launcher": "^3.0.0",
+    "karma-coverage": "^2.0.0",
+    "karma-jasmine": "^5.0.0",
+    "karma-jasmine-html-reporter": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=17.0.0",
+    "@angular/common": ">=17.0.0"
+  }
+}

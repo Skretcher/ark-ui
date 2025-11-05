@@ -1,0 +1,22 @@
+{
+  "name": "@ark-ui/css",
+  "version": "0.0.0",
+  "description": "Compiled Tailwind CSS for Ark-UI",
+  "main": "dist/index.css",
+  "files": ["dist"],
+  "scripts": {
+    "build": "postcss src/index.css -o dist/index.css",
+    "dev": "postcss src/index.css -o dist/index.css --watch",
+    "lint": "stylelint src/**/*.css",
+    "lint:fix": "stylelint src/**/*.css --fix"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.0",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^6.0.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^35.0.0"
+  }
+}
