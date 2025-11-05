@@ -65,6 +65,10 @@ cd packages/docs && pnpm run dev
 
 Visit [ark-ui.dev](https://ark-ui.dev) for comprehensive documentation, examples, and guides.
 
+### Component Examples
+
+View live HTML component examples at `packages/docs/src/examples.html` when running the development server.
+
 ## 🤝 Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.

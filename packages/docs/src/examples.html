@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ark-UI Components Examples</title>
+  <link rel="stylesheet" href="../../css/dist/index.css">
+</head>
+<body class="p-8 bg-gray-50">
+  <div class="max-w-4xl mx-auto space-y-8">
+    <header class="text-center">
+      <h1 class="text-3xl font-bold text-gray-900 mb-2">Ark-UI Components</h1>
+      <p class="text-gray-600">Base HTML components styled with Tailwind CSS</p>
+    </header>
+
+    <!-- Buttons Section -->
+    <section class="bg-white p-6 rounded-lg shadow-sm">
+      <h2 class="text-xl font-semibold mb-4">Buttons</h2>
+      <div class="space-y-4">
+        <div class="flex flex-wrap gap-4">
+          <button class="ark-button ark-button-primary">
+            Primary Button
+          </button>
+          <button class="ark-button ark-button-secondary">
+            Secondary Button
+          </button>
+          <button class="ark-button ark-button-outline">
+            Outline Button
+          </button>
+          <button class="ark-button ark-button-ghost">
+            Ghost Button
+          </button>
+          <button class="ark-button ark-button-danger">
+            Danger Button
+          </button>
+        </div>
+
+        <div class="flex flex-wrap gap-4">
+          <button class="ark-button ark-button-primary ark-button-sm">
+            Small Button
+          </button>
+          <button class="ark-button ark-button-primary">
+            Default Button
+          </button>
+          <button class="ark-button ark-button-primary ark-button-lg">
+            Large Button
+          </button>
+        </div>
+
+        <div class="flex flex-wrap gap-4">
+          <button class="ark-button ark-button-primary" disabled>
+            Disabled Button
+          </button>
+          <button class="ark-button ark-button-primary">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+            </svg>
+            With Icon
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inputs Section -->
+    <section class="bg-white p-6 rounded-lg shadow-sm">
+      <h2 class="text-xl font-semibold mb-4">Inputs</h2>
+      <div class="space-y-4">
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+          <input type="email" id="email" class="ark-input" placeholder="Enter your email" aria-describedby="email-help">
+          <p id="email-help" class="mt-1 text-sm text-gray-500">We'll never share your email with anyone else.</p>
+        </div>
+
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+          <input type="password" id="password" class="ark-input" placeholder="Enter your password" aria-describedby="password-help">
+          <p id="password-help" class="mt-1 text-sm text-gray-500">Must be at least 8 characters long.</p>
+        </div>
+
+        <div>
+          <label for="error-input" class="block text-sm font-medium text-red-700 mb-1">Error Input</label>
+          <input type="text" id="error-input" class="ark-input border-red-300 focus:border-red-500 focus:ring-red-500" placeholder="This field has an error" aria-invalid="true" aria-describedby="error-message">
+          <p id="error-message" class="mt-1 text-sm text-red-600">This field is required.</p>
+        </div>
+
+        <div>
+          <label for="disabled-input" class="block text-sm font-medium text-gray-700 mb-1">Disabled Input</label>
+          <input type="text" id="disabled-input" class="ark-input" placeholder="Disabled input" disabled aria-disabled="true">
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="bg-white p-6 rounded-lg shadow-sm">
+      <h2 class="text-xl font-semibold mb-4">Cards</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="ark-card p-6">
+          <h3 class="text-lg font-semibold mb-2">Card Title</h3>
+          <p class="text-gray-600">This is a basic card component with some content. Cards are great for grouping related information.</p>
+          <button class="ark-button ark-button-primary mt-4">
+            Action Button
+          </button>
+        </div>
+
+        <div class="ark-card p-6">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+              <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold">Card with Icon</h3>
+              <p class="text-gray-600">Cards can contain various content types.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alerts Section -->
+    <section class="bg-white p-6 rounded-lg shadow-sm">
+      <h2 class="text-xl font-semibold mb-4">Alerts</h2>
+      <div class="space-y-4">
+        <!-- Success Alert -->
+        <div class="ark-alert bg-green-50 border-green-200">
+          <svg class="ark-alert-icon text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <div class="ark-alert-content">
+            <div class="ark-alert-title text-green-800">Success!</div>
+            <div class="ark-alert-description text-green-700">Your changes have been saved successfully.</div>
+          </div>
+          <button class="ark-alert-close text-green-600 hover:text-green-800">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Warning Alert -->
+        <div class="ark-alert bg-yellow-50 border-yellow-200">
+          <svg class="ark-alert-icon text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+          </svg>
+          <div class="ark-alert-content">
+            <div class="ark-alert-title text-yellow-800">Warning</div>
+            <div class="ark-alert-description text-yellow-700">Please review your input before proceeding.</div>
+          </div>
+          <button class="ark-alert-close text-yellow-600 hover:text-yellow-800">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Error Alert -->
+        <div class="ark-alert bg-red-50 border-red-200">
+          <svg class="ark-alert-icon text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <div class="ark-alert-content">
+            <div class="ark-alert-title text-red-800">Error</div>
+            <div class="ark-alert-description text-red-700">Something went wrong. Please try again.</div>
+          </div>
+          <button class="ark-alert-close text-red-600 hover:text-red-800">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Info Alert -->
+        <div class="ark-alert bg-blue-50 border-blue-200">
+          <svg class="ark-alert-icon text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <div class="ark-alert-content">
+            <div class="ark-alert-title text-blue-800">Information</div>
+            <div class="ark-alert-description text-blue-700">Here's some important information you should know.</div>
+          </div>
+          <button class="ark-alert-close text-blue-600 hover:text-blue-800">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Example -->
+    <section class="bg-white p-6 rounded-lg shadow-sm">
+      <h2 class="text-xl font-semibold mb-4">Modal</h2>
+      <button class="ark-button ark-button-primary" onclick="openModal()">
+        Open Modal
+      </button>
+
+      <!-- Modal Overlay (hidden by default) -->
+      <div id="modal-overlay" class="ark-modal-overlay" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
+        <div class="ark-modal-content p-6">
+          <div class="flex justify-between items-center mb-4">
+            <h3 id="modal-title" class="text-lg font-semibold">Modal Title</h3>
+            <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600" aria-label="Close modal">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+          <p id="modal-description" class="text-gray-600 mb-6">This is the content of the modal. You can put any content here.</p>
+          <div class="flex justify-end gap-3">
+            <button onclick="closeModal()" class="ark-button ark-button-outline">
+              Cancel
+            </button>
+            <button onclick="closeModal()" class="ark-button ark-button-primary">
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function openModal() {
+      const modal = document.getElementById('modal-overlay');
+      modal.style.display = 'flex';
+      modal.focus();
+    }
+
+    function closeModal() {
+      document.getElementById('modal-overlay').style.display = 'none';
+    }
+
+    // Close modal when clicking overlay
+    document.getElementById('modal-overlay').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    // Trap focus within modal when open
+    document.getElementById('modal-overlay').addEventListener('keydown', function(e) {
+      if (e.key === 'Tab') {
+        const modal = document.getElementById('modal-overlay');
+        const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+
+        if (e.shiftKey) {
+          if (document.activeElement === firstElement) {
+            lastElement.focus();
+            e.preventDefault();
+          }
+        } else {
+          if (document.activeElement === lastElement) {
+            firstElement.focus();
+            e.preventDefault();
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
