@@ -1,0 +1,8 @@
+
+> @ark-ui/docs@0.0.0 build D:\ARKTINI\ark-ui\packages\docs
+> vitepress build docs
+
+
+  [32m[1mvitepress[22m v1.6.4[39m
+
+- building client + server bundles...

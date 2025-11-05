@@ -11,7 +11,7 @@
 - [x] Setup Husky with pre-commit hook for lint-staged.
 - [x] Create .github/workflows/ci.yml for basic CI/CD (install, lint, build).
 - [x] Create README.md with project description and setup instructions.
-- [ ] Run pnpm install to install dependencies.
-- [ ] Run pnpm run build to verify Turborepo setup.
+- [x] Run pnpm install to install dependencies.
+- [x] Run pnpm run build to verify Turborepo setup.
 - [ ] Run pnpm run lint to check ESLint and Prettier.
 - [ ] Test git commit to ensure Husky hooks work.

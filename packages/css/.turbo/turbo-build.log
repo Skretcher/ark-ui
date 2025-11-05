@@ -1,0 +1,6 @@
+
+> @ark-ui/css@0.0.0 build D:\ARKTINI\ark-ui\packages\css
+> postcss src/index.css -o dist/index.css
+
+[31mInput Error: You must pass a valid list of files to parse[39m
+ ELIFECYCLE  Command failed with exit code 1.

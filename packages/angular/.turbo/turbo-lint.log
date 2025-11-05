@@ -1,0 +1,5 @@
+
+> @ark-ui/angular@0.0.0 lint D:\ARKTINI\ark-ui\packages\angular
+> ng lint
+
+Error: This command is not available when running the Angular CLI outside a workspace.
