@@ -7,8 +7,8 @@
   "types": "dist/index.d.ts",
   "files": ["dist"],
   "scripts": {
-    "build": "ng build",
-    "dev": "ng build --watch",
+    "build": "vite build",
+    "dev": "vite build --watch",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
     "test": "ng test",
@@ -32,7 +32,8 @@
     "karma-chrome-launcher": "^3.0.0",
     "karma-coverage": "^2.0.0",
     "karma-jasmine": "^5.0.0",
-    "karma-jasmine-html-reporter": "^2.0.0"
+    "karma-jasmine-html-reporter": "^2.0.0",
+    "vite": "^5.4.21"
   },
   "peerDependencies": {
     "@angular/core": ">=17.0.0",

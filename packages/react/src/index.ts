@@ -1,7 +1,5 @@
-// React components and utilities for Ark-UI
-export * from './components/Button';
-export * from './components/Input';
-export * from './components/Card';
+import './index.css';
 
-// Import CSS
-import '@ark-ui/css/dist/index.css';
+export * from './components/Button';
+export * from './components/Card';
+export * from './components/Input';

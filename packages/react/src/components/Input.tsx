@@ -1,28 +1,20 @@
-import React, { forwardRef } from 'react';
-import { cn } from '../utils/cn';
+import React from 'react';
 
-export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  variant?: 'default' | 'error';
-}
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
 
-const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ className, variant = 'default', ...props }, ref) => {
-    return (
-      <input
-        className={cn(
-          'ark-input',
-          {
-            'border-error-300 focus:border-error-500 focus:ring-error-500': variant === 'error',
-          },
-          className
-        )}
-        ref={ref}
-        {...props}
-      />
-    );
-  }
-);
+export const Input = React.forwardRef<HTMLInputElement, InputProps>((
+  { className, ...props },
+  ref
+) => {
+  const baseClasses = 'ark-input';
+
+  return (
+    <input
+      className={`${baseClasses} ${className}`}
+      ref={ref}
+      {...props}
+    />
+  );
+});
 
 Input.displayName = 'Input';
-
-export { Input };

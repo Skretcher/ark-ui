@@ -1,9 +1,6 @@
 module.exports = {
   plugins: {
-    tailwindcss: {
-      config: '../core/tailwind.config.js'
-    },
+    tailwindcss: {},
     autoprefixer: {},
-    cssnano: process.env.NODE_ENV === 'production' ? {} : false,
   },
-}
+};

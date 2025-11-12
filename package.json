@@ -11,27 +11,45 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "turbo run test",
+    "release": "turbo run build && changeset publish",
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.19",
+    "@changesets/cli": "^2.27.1",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
     "@turbo/gen": "^1.12.4",
     "@types/node": "^20.10.5",
+    "autoprefixer": "^10.4.21",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.2",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
+    "postcss": "^8.5.6",
     "prettier": "^3.1.1",
+    "tailwindcss": "^4.1.16",
     "turbo": "^1.11.2",
     "typescript": "^5.3.3"
   },
   "lint-staged": {
     "*.{js,ts,tsx,vue,svelte}": [
-      "eslint --fix",
+      "npx eslint --fix",
       "prettier --write"
     ],
     "*.{json,md}": [
       "prettier --write"
     ]
-  }
+  },
+  "description": "A cross-framework, Tailwind-based design system for modern web applications.",
+  "main": ".eslintrc.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

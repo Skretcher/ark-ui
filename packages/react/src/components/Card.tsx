@@ -1,20 +1,20 @@
-import React, { forwardRef } from 'react';
-import { cn } from '../utils/cn';
+import React from 'react';
 
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {}
 
-const Card = forwardRef<HTMLDivElement, CardProps>(
-  ({ className, ...props }, ref) => {
-    return (
-      <div
-        className={cn('ark-card', className)}
-        ref={ref}
-        {...props}
-      />
-    );
-  }
-);
+export const Card = React.forwardRef<HTMLDivElement, CardProps>((
+  { className, ...props },
+  ref
+) => {
+  const baseClasses = 'ark-card';
+
+  return (
+    <div
+      className={`${baseClasses} ${className}`}
+      ref={ref}
+      {...props}
+    />
+  );
+});
 
 Card.displayName = 'Card';
-
-export { Card };
