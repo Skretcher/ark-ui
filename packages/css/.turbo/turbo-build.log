@@ -1,8 +1,8 @@
 
-> @ark-ui/css@0.0.0 build D:\ARKTINI\ark-ui\packages\css
-> postcss src/index.css -o dist/index.css
+> @ark-ui/css@0.0.1 build D:\ARKTINI\ark-ui\packages\css
+> tailwindcss -i ./src/index.css -o ./dist/index.css --config ./tailwind.config.js
 
 
-[1m[33mwarn[39m[22m - The `content` option in your Tailwind CSS configuration is missing or empty.
-[1m[33mwarn[39m[22m - Configure your content sources or your generated CSS will be missing styles.
-[1m[33mwarn[39m[22m - https://tailwindcss.com/docs/content-configuration
+Rebuilding...
+
+Done in 209ms.
